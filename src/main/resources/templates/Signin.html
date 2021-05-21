@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css" />
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<title>Login</title>
+</head>
+<body>
+
+Welcome to Sporty shoes
+	<p style="align-content: center;">[[${msg}]]</p>
+	<form action="#" th:action="@{/signin}" method="post">
+	<div class="container">
+	
+
+		<div class="form-control">
+			<label for = "email">Email</label>
+			<input type="text" name="email"  placeholder="Enter your Email">
+		</div>
+		<div class="form-control">
+			<label for = "password">Password</label>
+			<input type="password" name="password"  placeholder="Enter your Password">
+		</div>	
+		
+		<div>
+			<input type="submit" value="Signup" class="btn btn-secondary">
+		</div>			
+	</div>
+	
+	
+	</form>
+		<a th:href="@{register}"> Click Here to Register </a>
+</body>
+</html>
